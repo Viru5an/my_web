@@ -1,92 +1,23 @@
-/*@import url('normalize.css');*/
-html{
-	height: 100%;
-}
 body{
-	font-family: 'Open Sans Condensed','Arial Narrow', serif;
-	font-weight: 400;
-	font-size: 15px;
-	color: #333;
 	background: #fff url(../images/bg2.jpg) no-repeat top right;
 	background-attachment: fixed;
 	background-size: cover;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-font-smoothing: subpixel-antialiased;
-	font-smoothing: subpixel-antialiased;
-	overflow-x: hidden;
-}
-a{
-	color: #555;
-	text-decoration: none;	
-}
-.container{
-	width: 100%;
-	min-width: 320px;
-	position: relative;
-}
-.clr{
-	clear: both;
-	padding: 0;
-	height: 0;
-	margin: 0;
-}
-.container > header{
-	margin: 10px;
-	padding: 10px;
-	position: relative;
-	display: block;
-    text-align: left;
-}
-.container > header h1{
-	font-size: 36px;
-	line-height: 40px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	font-weight: 300;
-	color: #333;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-.container > header h1 span{
-	font-weight: 700;
-}
-.container > header h2{
-	font-size: 14px;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 15px 0 5px 0;
-	color: #6190ca;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
 }
 .rw-wrapper{
-	width: 70%;
+	width: 80%;
 	position: relative;
-	margin: 110px auto 18.5%  auto;
+	margin: 110px auto 0 auto;
 	padding: 10px;
-}
-@media screen and (max-width: 768px){
-	.rw-wrapper{
-		margin: 110px auto 29.5%  auto;
-	}
-}
-@media screen and (max-width: 320px){
-	.navbar-default{
-		margin-top: -21.5em;
-	}
 }
 .rw-sentence{
 	margin: 0;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 300;
 	text-shadow: 0 0 0 rgba(0,0,0,0.0001);
-	font-size: 22.5px;!important
 }
 .rw-sentence span{
 	color: #000;
 	white-space: nowrap;
-	font-family: "Open Sans Condensed",Helvetica,Arial,sans-serif;
 }
 .rw-sentence > span:first-child{
 	display: block;
@@ -95,8 +26,7 @@ a{
 }
 .rw-words{
 	width: 100%;
-	height: 75px;
-	font-size: 14.5px;
+	height: 100px;
 	-webkit-perspective: 800px;
 	perspective: 800px;
 }
@@ -106,7 +36,6 @@ a{
 	opacity: 0;
 	white-space: nowrap;
 	overflow: hidden;
-	font-family: "Open Sans Condensed",Helvetica,Arial,sans-serif;
 }
 .rw-words-1 span{
 	font-size: 500%;
@@ -209,66 +138,3 @@ a{
 	.rw-words-2 span { font-size: 70%; }
 	.rw-sentence > span:first-child{ font-size: 60%;}
 }
-.rw-sentence-IE{
-	display: none;
-	padding: 30px;
-}
-
-@media screen and (max-width: 768px){
-	.navbar-header{
-		float: left;!important	
-		}
-	}
-@media (min-width: 768px){
-	.navbar-nav {
-	font-size: 3em;
-	font-weight: bold;
-	}
-}
-nav.navbar{
-	margin-bottom: 0;	
-}
-
-#section1-wrapper{
-	height: 100%;
-	background-color: #0088cc;
-}
-#section1-wrapper .container{
-	text-align: center;
-}
-/*
-#section1-wrapper > :nth-child(1){
-	background-color: #fff;
-	border: 5px solid #d2d2d2;
-	border-radius: 3%;
-}
-#section1-wrapper > :nth-child(4){
-	background-color: #fff;
-	border: 5px solid #d2d2d2;
-	border-radius: 3%;
-}*/
-#section1-wrapper header{
-	font-size: 7em;
-	font-weight: bolder;
-	text-transform: uppercase;
-	margin: 0 auto;
-	color: #fff;
-	border-bottom: 2px solid #fff;
-}
-#section1-wrapper header{
-	padding: 0 11px;
-}
-
-#section1-wrapper .box-text{
-	padding: 10px 30px 10px 30px;
-	border: 3px solid #fff;
-	color: #efefef;
-	margin: 0 auto;
-	margin: 2% 0 2% 0;
-}
-.box-text article {
-	padding-top: 10px;
-	font-size: 2em;
-
-}
-
