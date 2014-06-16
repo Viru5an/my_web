@@ -9,27 +9,21 @@
         <meta name="keywords" content="Diseño, web, HTML5, bootstrap 3, resposivo, moviles" />
         <meta name="author" content="Juan José Abrego Mejia" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/global.css" />
-        
-		<script src="js/modernizr.custom.js"></script>
-		<style>
-			.no-cssanimations .rw-wrapper .rw-sentence span:first-child{
-				opacity: 1;
-			}
-		</style>
-		<!--[if lt IE 9]> 
-		 <script src="js/respond.min.js"></script>
-			<style>
-				body{ background: #fff; }
-				.rw-wrapper{ display: none; } 
-				.rw-sentence-IE{ display: block;  }
-			</style>
-		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+            <style>
+            body{ background: #fff; }
+            .rw-wrapper{ display: none; } 
+            .rw-sentence-IE{ display: block;  }
+            </style>
+        <![endif]-->
     </head>
-    <body>
-        <section id="inico">
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <section id="home">
             <div class="container">
                 <header> 
                     <nav>
@@ -49,7 +43,7 @@
 						<span>Que cautivan al usuario</span>
 						<span>Que te hace resaltar</span>
 						<span>Que te ayudarán a triunfar</span>
-						<span>Que te acercará a tu publico</span>
+						<span>Que te acercará a tu público</span>
 						<span>este es otro texto</span>
 					   </div>
 				    </h2>
@@ -69,15 +63,16 @@
                         </button>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li>
-                                    <a data-toggle="tab" href="#inicio">Inicio</a>
-                                </li>
-                                <li>
-        			 	           <a data-toggle="tab" href="#section1-wrapper">Servicios</a>
-                               </li>
-                               <li>
-                                   <a data-toggle="tab" href="#texto">texto</a>
-                                </li>
+                                <li><a data-toggle="tab" href="#home">Inicio</a></li>
+                                <li class="divider"></li> 
+                                <li><a data-toggle="tab" href="#section1-wrapper">HTML5/CSS3</a></li>
+                                <li class="divider"></li>
+                                <li><a data-toggle="tab" href="#section2-wrapper">Características</a></li>
+                                <li class="divider"></li>
+                                <li><a data-toggle="tab" href="#section3-wrapper">Conóceme</a></li>
+                                <li class="divider"></li>
+                                <li><a data-toggle="tab" href="#section4-wrapper">Contancto</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -121,7 +116,53 @@
                 </div>
             </div>
         </section>
+         <section id="section3-wrapper">
+            <div class="container">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="vcard">
+                        <div class="org">Juan José Abrego Mejia</div>
+              <a class="email" href="mailto:lic@gmail.com"target="_blank">Lic.@gmail.com</a>
+              <div class="adr">
+                <div class="street-address">Albino Garcia 820, Zona de Oro.</div>
+                <span class="locality">Celaya</span>, 
+                <span class="region">Guanajuato</span>, 
+                <span class="postal-code">38040</span>
+                <span class="country-name">México</span>.
+            </div>
+            <div class="tel">
+              <a href="tel:4611315434">461 1 31 54 34</a>
+              <br>
+              <a href="tel:6147370">61 47 370</a>
+            </div>
+                    </div>
+                </div>
+            </div>    
+         </section>
+         <section id="section4-wrapper">
+            <div class="container">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    
+                </div>
+         </section>
+         <footer id="footer-wrapper">
+            <div class="container">
+                <div class="col-xs-12 col-md-12 col-lg-12 ">
+                    <span>Diseño original por Juan josé Abrego Mejia con bootstrap.</span> 
+                </div>   
+            </div>
+         </footer>
     </body>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+     <script src="js/scrolls.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+        <style>
+            .no-cssanimations .rw-wrapper .rw-sentence span:first-child{
+                opacity: 1;
+            }
+        </style>
+        
 </html>
