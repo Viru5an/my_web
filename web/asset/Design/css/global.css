@@ -15,6 +15,16 @@ body{
 	font-smoothing: subpixel-antialiased;
 	overflow-x: hidden;
 }
+@font-face {
+	font-family:'icon';
+	src: url('../fonts/icon.eot');
+	src: url('../fonts/icon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icon.woff') format('woff'),
+		url('../fonts/icon.ttf') format('truetype'),
+		url('../fonts/icon.svg#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a{
 	color: #555;
 	text-decoration: none;	
@@ -233,20 +243,9 @@ nav.navbar{
 	height: 100%;
 	background-color: #0088cc;
 }
-#section1-wrapper .container{
+#section1-wrapper .container, #section2-wrapper .container{
 	text-align: center;
 }
-/*
-#section1-wrapper > :nth-child(1){
-	background-color: #fff;
-	border: 5px solid #d2d2d2;
-	border-radius: 3%;
-}
-#section1-wrapper > :nth-child(4){
-	background-color: #fff;
-	border: 5px solid #d2d2d2;
-	border-radius: 3%;
-}*/
 #section1-wrapper header{
 	font-size: 7em;
 	font-weight: bolder;
@@ -269,6 +268,60 @@ nav.navbar{
 .box-text article {
 	padding-top: 10px;
 	font-size: 2em;
-
 }
-
+.box-text img{
+	position: relative;
+	float: right;
+	margin-top: -8em;
+	width: 6em;	
+}
+.box-text .width-fix{
+	width: 12%;
+}
+#section2-wrapper{
+	height: 100%;
+	background-color: #fff;
+}
+#section2-wrapper header{
+	font-size: 2em;
+	font-weight: bolder;
+	margin: 0 auto;
+	color: #0088cc;
+	border-bottom: 2px solid #fff;
+}
+#section2-wrapper article li{
+	display: block;
+	margin: 0 auto 0.35em auto;
+	border-radius: 100%;
+	background: transparent;
+	font-size: 6.75em;
+	width: 1.6em;
+	height: 1.6em;
+	line-height: 1.7em;
+	text-align: center;
+	box-shadow: 0 0 0 1px #dee0e3;
+	cursor: default;
+	list-style: none;
+}
+.icon:before{
+	font-family: 'icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.resposive:before{
+	content: '\e001';
+}
+.Bootstrap-Framework:before{
+	content: '\e002'
+}
+.Mobile-Fisrt:before{
+	content: '\e600'
+}
+.Personalisable:before{
+	content: '\e003'
+}
