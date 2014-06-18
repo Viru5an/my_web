@@ -25,10 +25,14 @@ body{
 	font-weight: normal;
 	font-style: normal;
 }
-/*a{
-	color: #555;
-	text-decoration: none;	
-}*/
+.modal {
+ overflow-y: auto;
+}
+
+.modal-open {
+ overflow: auto;
+}
+
 .container{
 	width: 100%;
 	min-width: 320px;
@@ -79,11 +83,6 @@ body{
 @media screen and (max-width: 768px){
 	.rw-wrapper{
 		margin: 110px auto 29.5%  auto;
-	}
-}
-@media screen and (max-width: 320px){
-	.navbar-default{
-		margin-top: -21.5em;
 	}
 }
 .rw-sentence{
@@ -225,25 +224,33 @@ body{
 }
 
 @media screen and (max-width: 768px){
-	.navbar-header{
-		float: left;!important	
+	.navbar-toggle, .navbar-header {
+		float: left!important;	
 		}
+	.navbar-header{
+		width: 100%;
+		font-size: 1.2em;
 	}
+}
 @media (min-width: 768px){
 	.navbar-nav {
-	font-size: 2.4em;
+	font-size: 2.0em;
 	font-weight: bold;
 	}
 }
 nav.navbar{
 	margin-bottom: 0;	
 }
-#nav-wrapper a{
-	
+.navbar-default .navbar-nav>li>a {
+color: #000;
+}
+#nav_wrapper{
+	box-shadow: 0 0 0 1px #c2c2c2;
 }
 #nav-wrapper a:hover{
-	color:#fff;
+	color:#fff;	
 	background-color:#0088cc;
+	cursor: pointer;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
 	color:#fff;
@@ -252,9 +259,10 @@ nav.navbar{
 #section1-wrapper{
 	height: 100%;
 	background-color: #0088cc;
+	border-bottom: 1px solid #000;
 }
 #section1-wrapper .container, #section2-wrapper .container{
-	text-align: center;
+	text-align:  justify;
 }
 #section1-wrapper header{
 	font-size: 7em;
@@ -264,29 +272,54 @@ nav.navbar{
 	color: #fff;
 	border-bottom: 2px solid #fff;
 }
+@media screen and (max-width: 768px){
+	#section1-wrapper header{
+		font-size: 4.5em;
+	}
+}
+@media screen and (max-width: 320px){
+	#section1-wrapper header{
+		font-size: 3em;
+	}
+}
 #section1-wrapper header{
 	padding: 0 11px;
 }
 
 #section1-wrapper .box-text{
-	padding: 10px 30px 10px 30px;
-	border: 3px solid #fff;
 	color: #efefef;
 	margin: 0 auto;
 	margin: 2% 0 2% 0;
 }
+.box-text-left{
+	padding: 10px 30px 10px 638px;
+}
+.box-text-right{
+	padding: 10px 638px 10px 30px;
+}
 .box-text article {
 	padding-top: 10px;
 	font-size: 2em;
-}
+}	
 .box-text img{
-	position: relative;
-	float: right;
-	margin-top: -8em;
-	width: 6em;	
+	display: inline;
+	margin: 1%;
 }
-.box-text .width-fix{
-	width: 12%;
+.img-left{
+	float: left;
+}
+.img-right{
+	float: right;
+}
+@media screen and (max-width: 768px){
+	.box-text article{
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 320px){
+	.box-text article{
+		font-size: 1.2em;
+	}
 }
 #section2-wrapper{
 	height: 100%;
@@ -297,6 +330,7 @@ nav.navbar{
 #section2-wrapper header{
 	font-size: 2em;
 	font-weight: bolder;
+	text-align: center;
 	margin: 0 auto;
 	color: #0088cc;
 	border-bottom: 2px solid #fff;
@@ -340,17 +374,31 @@ nav.navbar{
 #section3-wrapper{
 	color:#da0a0a;
 	font-size: 2em;
-	text-align: center;
+	text-align: right;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 #section3-wrapper .vcard a{
 	text-decoration: none;
 }
+#section3-wrapper{
+	border-top: 1px solid #000;
+}
 #section3-wrapper .vcard {
-	border:3px solid #dee0e3;
 	margin: 10px auto 10px auto;
-	width: 60%
+	float:right;
+}
+@media screen and (max-width: 768px){
+	#section3-wrapper .vcard{
+		font-size: 1em;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 320px){
+	#section3-wrapper .vcard{
+		font-size: .55em;
+		width: 100%;
+	}
 }
 #section4-wrapper{
 

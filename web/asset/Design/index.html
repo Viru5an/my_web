@@ -51,7 +51,7 @@
                 <h2 class="rw-sentence-IE">Diseño Y desarrollo Elegantes sitios web que cautivan al usuario</h2>
             </div>
         </section>
-        <section id="nav-wrapper">
+        <section id="nav_wrapper">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container">
                     <div class="navbar-header pull-right">
@@ -71,7 +71,7 @@
                                 <li class="divider"></li>
                                 <li><a data-toggle="tab" href="#section3-wrapper">Conóceme</a></li>
                                 <li class="divider"></li>
-                                <li><a data-toggle="tab" href="#section4-wrapper">Contancto</a></li>
+                                <li><a data-toggle="modal" data-toggle="tab" data-target="#contact-form">Contacto</a></li>
 
                             </ul>
                         </div>
@@ -81,17 +81,26 @@
         </section>
         <section id="section1-wrapper">
             <div class="container">
-                <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-md-12 col-lg-12">
                     <div class="box-text">
-                        <header>HTML5</header><img src="img/html5.svg" class="img-thumbnail img-responsive">
-                        <article>El HTML5 se levanta como la última de las actualizaciones en la web, nunca antes el diseño y desarollo de páginas web habia sido tan interesante y creativo. Con la introducción del diseño web resposivo palabra acuñada por <i>Ethan Marcotte</i>, todos corrimos a formarnos tras este nuevo paradigma que nos ofrece una bandera unificada para todas las funciones como imagenes y grillas o "grids" resposivas, media quieries y más, así cambiando para siempre en la forma que vemos el diseño y desarrollo web.</article>
+                        <img class="img-responsive img-left"src="img/responsive.png">
+                        <div class="box-text-left">
+                        <header>Página Web</header>
+                        <article>
+                           Adquiera su propia página web que se adapta a sus nesecidades, una pagina web lo promueve 24 horas al día los 7 días de la semana además de ser mucho más barato que gastar dinero en comerciales y anuncios impresos, únase a un mercado de 52 millones de Mexicanos en internet (IMIPCI) 
+                        </article>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-md-12 col-lg-12">
                     <div class="box-text">
-                        <header>CSS3</header>
-                        <img src="img/css3.svg" class="img-thumbnail img-responsive width-fix">
-                        <article>Sin el CSS3, estas hermosas y creativas péginas web solo serian más que un puñado de listas, parrafos y imagenes sin ordenar. Con el CSS3 Aprendimos complejas formas de diseño para incrementar la flexibilidad y mejorar la accesibilidad además de reducir el código. Finalmente con el CSS3 podemos usar animaciones, transiciones y keyframes que antes solo eran acesibles con Flash y JavaScript para una web mucho más dinamica y visual que antes.HTML5 y CSS3 son la formula ganadora para la generación de un web mucho más interesante.</article>
+                        <img class="img-responsive img-right"src="img/responsive.png">
+                        <div class="box-text-right">
+                        <header>Social Media</header>
+                        <article>
+                            Use la tecnologia a su favor y conecte con sus clientes de una manera más facil y sencilla, tenga una comunicasión directa donde usted puede escuchar e interactuar con ellos. Incremente la expocisón de su empresa exponecialmente que generan más ventas.    
+                        </article>
+                        </div>
                     </div>
                 </div>
             </div>    
@@ -141,7 +150,43 @@
          <section id="section4-wrapper">
             <div class="container">
                 <div class="col-xs-12 col-md-6 col-lg-6">
-                    
+                     <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="contact-formLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form class="form-horizontal" role="form">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+                                        <h4 class="modal-title" id="contact-formLabel">Genial! Con gusto te atenderemos</h4> 
+                                </div>
+                                <div class="modal-body">
+                                
+                                    <div class="form-group">
+                                        <label for="name">Nombre o Compañia</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nombre o Compañia">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Correo Electronico</label> 
+                                        <input type="email" class="form-control" id="email" placeholder="Ejemplo@domino.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="url">Sitio Web</label>
+                                        <input type="url" class="form-control" id="website" placeholder="http://www.awesomewebsite.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Mensaje</label>
+                                        <textarea class="form-control" rows="5" id="message" placeholder="En que podemos ayudarte!"></textarea>
+                                    </div>
+                                
+                                </div>
+                          <div class="modal-footer">
+                            <div id="success"></div>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                          </div>
+                         </form>
+                        </div>  
+                   </div> 
+                 </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-6">
                     
@@ -164,5 +209,29 @@
                 opacity: 1;
             }
         </style>
+        <script>
+$(function() {
+    var stickyoffset_top = $('#nav_wrapper').offset().top;
+    var nav_wrapper = function(){
+        var scroll_top = $(window).scrollTop(); 
+        if (scroll_top > stickyoffset_top) { 
+            $('#nav_wrapper').css({ 
+'position': 'fixed', 'top':0, 'left':0,'width':'100%',
+'z-index':'999'});
+        } else {
+            $('#nav_wrapper').css({ 'position': 'relative'}); 
+        }   
+    };
+
+    $(window).scroll(function() {
+         nav_wrapper();
+    });
+
+    $('a[href="#"]').click(function(event){ 
+        event.preventDefault(); 
+    });
+    
+});
+</script>
         
 </html>
