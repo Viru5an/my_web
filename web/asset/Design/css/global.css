@@ -26,11 +26,18 @@ body{
 	font-style: normal;
 }
 .modal {
- overflow-y: auto;
+ 	overflow-y: auto;
 }
 
 .modal-open {
- overflow: auto;
+ 	overflow: auto;
+}
+.alert {
+	margin-bottom: -2px;
+}
+.modal-footer {
+	margin-top: -2px;
+	padding: 9px 20px 11px;
 }
 
 .container{
